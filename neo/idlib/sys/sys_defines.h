@@ -181,6 +181,10 @@ bulk of the codebase, so it is the best place for analyze pragmas.
 // win32 needs this, but 360 doesn't
 #pragma warning( disable: 6540 )	// warning C6540: The use of attribute annotations on this function will invalidate all of its existing __declspec annotations [D:\tech5\engine\engine-10.vcxproj]
 
+// VS 2022 ADDED
+#pragma warning( disable: 5205 )    // warning C5205: delete of an abstract class 'idSIMDProcessor' that has a non-virtual destructor results in undefined behavior
+#pragma warning( disable: 5208 )    // warning C5208: unnamed class used in typedef name cannot declare members other than non-static data members, member enumerations, or member classes
+
 // VS 2019 ADDED
 // SLART: VS > 2010 has better error checking, I should've documented the locations where all of these error, but most are project wide.
 #pragma warning( disable: 4458 )	// warning C4458:  declaration of 'data' hides class member
